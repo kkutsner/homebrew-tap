@@ -8,15 +8,15 @@ class Kvim < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/kkutsner/kvim/releases/download/v0.6.0/kvim-0.6.0-aarch64-apple-darwin.tar.gz",
+      url "https://github.com/kkutsner/kvim/releases/download/v0.7.0/kvim-0.7.0-aarch64-apple-darwin.tar.gz",
           using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "5e3b5d32d44f0a3a7d0630d2eafafa206047ddd5fdf97a831df2f28ff4172f5e"
+      sha256 "71def79127b556efb0534d92699fb5685777608e98e76b627ef803714e6aa5e7"
     end
 
     on_intel do
-      url "https://github.com/kkutsner/kvim/releases/download/v0.6.0/kvim-0.6.0-x86_64-apple-darwin.tar.gz",
+      url "https://github.com/kkutsner/kvim/releases/download/v0.7.0/kvim-0.7.0-x86_64-apple-darwin.tar.gz",
           using: GitHubPrivateReleaseDownloadStrategy
-      sha256 "92c9a6ab5949ea1d5b215e92004ff8cc85db669ff83547b467f2f8dfdcfa9624"
+      sha256 "e5ecc09378b2daf7a2d6e43fa5fd020108ab7bb67b8d625795afe43d4a370b5d"
     end
   end
 
