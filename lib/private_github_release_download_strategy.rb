@@ -39,6 +39,8 @@ class GitHubPrivateReleaseDownloadStrategy < CurlDownloadStrategy
     return token unless token.empty?
 
     gh = which("gh")
+    prefixed_gh = HOMEBREW_PREFIX/"bin/gh"
+    gh = prefixed_gh if gh.nil? && prefixed_gh.executable?
     token = Utils.safe_popen_read(gh.to_s, "auth", "token").strip if gh
     return token unless token.to_s.empty?
 
