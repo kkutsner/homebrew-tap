@@ -45,12 +45,12 @@ class GitHubPrivateReleaseDownloadStrategy < CurlDownloadStrategy
     return token unless token.to_s.empty?
 
     raise CurlDownloadStrategyError, <<~EOS
-      GitHub authentication is required to download Kvim.
+      GitHub authentication is required to download this private release.
       Install GitHub CLI with `brew install gh`, then run `gh auth login`.
     EOS
   rescue ErrorDuringExecution
     raise CurlDownloadStrategyError, <<~EOS
-      GitHub authentication is required to download Kvim.
+      GitHub authentication is required to download this private release.
       Run `gh auth login`, or set HOMEBREW_GITHUB_API_TOKEN to a token with access.
     EOS
   end

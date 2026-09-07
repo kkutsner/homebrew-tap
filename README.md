@@ -3,6 +3,20 @@
 Homebrew formulae for software maintained by
 [kkutsner](https://github.com/kkutsner).
 
+## Kterm
+
+Kterm is distributed as an Apple Silicon macOS application. Its releases are
+private, so your GitHub account must have access to
+[`kkutsner/kterm`](https://github.com/kkutsner/kterm).
+
+Authenticate with GitHub CLI, then install Kterm:
+
+```sh
+brew install gh
+gh auth login
+brew install --cask kkutsner/tap/kterm
+```
+
 ## Kvim
 
 Kvim is distributed as native Apple Silicon and Intel macOS binaries. Its
