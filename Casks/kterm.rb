@@ -1,8 +1,8 @@
 require_relative "../lib/private_github_release_download_strategy"
 
 cask "kterm" do
-  version "0.7.1"
-  sha256 "5f8a4d19e81c909742221d7f4bbc95b7840d4881df8097ffe9a44d5973f7150a"
+  version "0.12.0"
+  sha256 "418ee897c5b051d80094da3c86db0581dbc569093609e91cab01141d5db59a68"
 
   url "https://github.com/kkutsner/kterm/releases/download/v#{version}/Kterm-#{version}-arm64.zip",
       using: GitHubPrivateReleaseDownloadStrategy
